@@ -4,6 +4,7 @@ public class Curso {
 	private String nome;
 	private int cargaHoraria;
 	private int valor;
+	private Coordenador coordenador;
 	
 	public Curso(String nome, int cargaHoraria, int valor) {
 		this.nome = nome;
@@ -36,6 +37,13 @@ public class Curso {
 				cargaHoraria,
 				valor
 				);
+		coordenador.show();
+	}
+	public Coordenador getCoordenador() {
+		return coordenador;
+	}
+	public void setCoordenador(Coordenador coordenador) {
+		this.coordenador = coordenador;
 	}
 
 }
